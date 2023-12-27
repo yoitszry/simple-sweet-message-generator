@@ -1,0 +1,61 @@
+const genText = document.getElementById("gen-text");
+const textEl = document.querySelector(".textMessage");
+let currentIndex = 0;
+
+genText.addEventListener("click", function() {
+  let messages = [
+    "You are the first and last thing on my mind every day.",
+    "Your love is the most beautiful thing in my life.",
+    "I am grateful for the love you shower upon me.",
+    "With you, I've found my happily ever after.",
+    "Your laughter is the sweetest music to my ears.",
+    "Every day with you feels like a magical adventure.",
+    "Your love is the anchor that keeps me grounded.",
+    "I am intoxicated by the fragrance of your love.",
+    "In your arms, I find solace and comfort.",
+    "You are the reason behind my constant smile.",
+    "My love for you grows stronger with each passing day.",
+    "Your presence brightens even the darkest days.",
+    "I am blessed to have you as my partner in this journey.",
+    "You are the missing piece that completes my heart.",
+    "Your kisses are the sweetest nectar of love.",
+    "Our love story is my favorite fairy tale.",
+    "You are the muse that inspires the poetry in my soul.",
+    "Every moment with you is a page in a love story.",
+    "Your eyes hold the magic of a thousand love stories.",
+    "I am forever grateful for the love you've given me.",
+    "You are the melody that plays in the background of my life.",
+    "I am in awe of the beauty that is your heart.",
+    "With you, I've found a love that transcends time.",
+    "Your love is the symphony that plays in my heart.",
+    "I am addicted to the warmth of your embrace.",
+    "In your gaze, I find the reflection of our eternal love.",
+    "You are the home I never knew I was searching for.",
+    "Loving you is the easiest and most natural thing in the world.",
+    "You are the reason I believe in true love.",
+    "Your love is my greatest treasure.",
+    "With you, I've found my soulmate and my best friend.",
+    "You are the source of all the joy in my life.",
+    "I love you not only for who you are but for who I become when I am with you.",
+    "Your love is the most precious gift I've ever received.",
+    "Every day with you feels like a celebration of love.",
+    "You are my refuge in the storms of life.",
+    "Your love is the guiding light in the darkness.",
+    "I am forever grateful for the love you've poured into my life.",
+    "With you, every day is Valentine's Day.",
+    "You are the heartbeat that gives rhythm to my life.",
+    "Your love is the canvas of my favorite memories.",
+    "I am enchanted by the magic of our love story.",
+    "You are the sunshine that brightens my gloomiest days.",
+    "Loving you is the best decision I've ever made.",
+    "Your love is the foundation of my happiness.",
+    "I cherish the love we share more than words can express.",
+    "You are the dream I never want to wake up from.",
+    "With you, I've found a love that is timeless and pure.",
+    "Your love is the greatest blessing in my life.",
+    "I am honored to share my life with you.",
+  ];
+  
+  const textEl = document.querySelector(".textMessage")
+  textEl.textContent = messages[Math.floor( Math.random()*messages.length )]
+});
